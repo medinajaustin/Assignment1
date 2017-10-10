@@ -82,6 +82,9 @@ Encapsulation: Refers to the bundling of data with the mothods that operate on t
 It is used to hide the values or state of a structured data object inside a class
 
 
+7.
+
+It is using polymorphism. The specific weapon is declared at runtime  
 
 
 
