@@ -1,15 +1,27 @@
 #include "CrazyRandomSword.h"
+#include <iostream>
 
 
 double CrazyRandomSword::hit(double armor){
 	
-	int ignore = rand() % (armor/2)
+	srand(time(0));	
 	
-    double damage = (hitPoints - armor) + ingore;
+	int ignore = rand() % int(armor/2);
+	
+    double damage = (hitPoints - armor) + ignore;
    
 	if(damage < 0)
 	{
         return 0;
     }
     return damage;
+}
+
+double CrazyRandomSword::setRand()
+{
+	srand(time(0));	
+	
+	double x = ((rand() % 91) + 10) * 1.0;
+	
+	return x;
 }

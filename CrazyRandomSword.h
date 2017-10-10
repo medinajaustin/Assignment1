@@ -10,11 +10,13 @@ class CrazyRandomSword : public Weapon {
 public:
 
 	
-    CrazyRandomSword() : Weapon("Crazy random sword", ((((rand() % 91)) + 10)* 1.0) {
-    }
+    CrazyRandomSword() : Weapon("Crazy random sword", CrazyRandomSword::setRand()) {}
     virtual ~CrazyRandomSword() {}; 
     virtual double hit(double armor);
 
+private:
+	
+	double setRand();
 };
 
 #endif /* CRAZYRANDOMSWORD_H */
