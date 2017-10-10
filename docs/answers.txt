@@ -1,0 +1,93 @@
+a)
+
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': medinajaustin
+Password for 'https://medinajaustin@github.com': 
+Counting objects: 7, done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 763 bytes | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/medinajaustin/Assignment1.git
+   fbdbe93..d5199e1  master -> master
+   
+b)
+
+9 commits have been done
+
+Command used: git shortlog
+
+c)
+
+File was last modified on...
+
+"Date:   Wed Sep 27 16:31:42 2017 -0500"
+
+Command used: git log --follow .gitignore
+
+
+d)
+
+commit 36a8e55e4bbdd171ab57d979e1a802d740f2db9b
+commit cb30d72a3d94c108f393c163a35c1cc9bf18ffca
+
+e)
+
+One reason is to allow multiple people to work on different parts of a project without 
+interfereing with each other. Also it ensures that the master branch always has production
+ready code.
+
+f)
+
+git status displays the state of the current working directory and staging area.
+git log displays a list of the history of entire project.
+
+g)
+
+git log --follow Weapon.h
+
+h)
+
+git log --grep=file
+
+i)
+
+Inheritance: Enables new objects to take on the properties of existing objects. Allows the 
+programmer to create new classes built upon already existing ones.
+
+Polymorphism: The ability to present the same interface for different underlying forms
+or data types. One method with multiple implementations for a certain class of action.
+
+Encapsulation: Refers to the bundling of data with the mothods that operate on that data.
+It is used to hide the values or state of a structured data object inside a class
+
+
+
+
+
+
+
+
+
+
+
