@@ -7,7 +7,7 @@
 class HunterBow : public Weapon {
 public:
 
-    HunterBow() : Weapon("Hunter's bow", 20.0) {
+    HunterBow() : Weapon("Hunter's bow", 80.0) {
     }
     virtual ~HunterBow() {}; 
     virtual double hit(double armor);

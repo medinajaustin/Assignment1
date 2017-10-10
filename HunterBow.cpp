@@ -1,24 +1,24 @@
 #include "HunterBow.h"
 
+#include <iostream>
+
 
 double HunterBow::hit(double armor){
     
-	int multiply;
+	double multiply = 1.0;
 	
-	if (armor == 0)
+	if (armor >= 1 && armor < 40)
 	{
-		multiply = 4;	
-	}
-	else if (armor > 0 && armor < 40)
-	{
-		multiply = 2;	
-	}
-	else if (armor >= 40)
-	{
-		multiply = 1;	
+		multiply = 2.0;	
 	}
 	
-	double damage = (hitPoints) * multiply;
+	if (armor >= 40)
+	{
+		multiply = 4.0;	
+	}
+	
+	double damage = hitPoints / multiply;
+	
    
    if(damage < 0)
    {
