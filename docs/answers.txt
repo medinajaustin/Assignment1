@@ -84,7 +84,10 @@ It is used to hide the values or state of a structured data object inside a clas
 
 7.
 
-It is using polymorphism. The specific weapon is declared at runtime  
+It is using polymorphism. A weapon is declared, but the type of weapon is not known until runtime.
+It is only known that a weapon of the parent class is made. Until the program compiles, it is unknown 
+which of the inherited classes of weapon it will actually be.
+
 
 
 
